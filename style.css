@@ -1,0 +1,10 @@
+h1 {color: red}
+h2 {color: yellow}
+h3 {color: white;}
+
+body {
+    background-image:url( https://i.imgur.com/ZQ6SBq2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1890px 1030px;
+}
