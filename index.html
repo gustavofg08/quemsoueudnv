@@ -1,75 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://i.imgur.com/bKjXzz5.png">
-    <link rel="stylesheet" type="text/css" href="">
-    
-    <title>Projeto WWW</title>
+    <meta charset="UTF-8" />
+    <title>Quem sou eu</title>
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="css/style.css"> 
     <style>
-        body {
-            background-color: lightslategray;
-            color: rgba(211, 211, 211, 0.611);
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large; 
-        }
-        
-         img {
-            position: relative;
-            -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 2.5s infinite  alternate ease-in-out;
-        }
-        @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+       h1 {color: green}
+h2 {color: yellow}
+h3 {color: white;}
+
+body {
+    background-image:url(https://i.imgur.com/ZQ6SBq2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 20px;
 }
-@keyframes mover {
-    0% { transform: translateY(-3px); }
-    100% { transform: translateY(20px); }
+h1:hover {
+    color: red;
+    box-shadow: 5px rgba(0, 0, 0, 0.678) ;
 }
-         .box{
-            border: 2px solid black;
-            background-color: lightgrey;
-            color: black;
-            border-radius: 25px;
-            padding: 10px;
-            margin: 2px;
-            max-width: 600px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-         html{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-         figcaption {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-         }
-         a{
-                color:lightslategray;
-            }
-            a:hover {
-                color: lightslategray;
-                transform: scale(1.08);
+
+#div1{
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div1 {
+    animation: blink 2.5s infinite alternate;
+}
+@keyframes blink {
+      0% {
+         opacity: 1;
+      }
+      50% {
+         color: rgb(92, 4, 92);
+         opacity: 0;
+         
+      }
+      51% {
+         opacity: 0;
+         
+      }
+      100% {
+         opacity: 1;
+         
+      }
+    }
+#div2{
+    background-image: url(https://i.imgur.com/ZQ6SBq2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+    padding: 15px;
+}   
+
+.container {
+    
+    margin: 1em 2em;
+    border: 8px dotted rgb(233, 230, 4);
+    padding: 10px 5px;
+}
+@media screen and (min-width: 800px) {
+ .container {
+    
+    border: 8px dotted rgb(233, 230, 4);
+    padding: 10px 5px;
+}   
+h1:hover {
+    color: yellow;
+}
+h2,h3 {
+    text-align: left;
+}
+}
+a {
+    color: yellow;
+}
+a:hover, img:hover {
+    transform: scale(1.08);
                 text-decoration: none;
                 display: inline-block;
                 transition: .2s;
                 box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.398);
-                border-radius: 6px;
-            }
+                border-radius: 7px;
+    
+}
+
     </style>
 </head>
 <body>
-    <h1>Welcome to World Wide Web <figcaption><img src="https://i.imgur.com/bKjXzz5.png" width="200" height="200"></figcaption></h1>
-    <div id="1" class="box"><button style="background-color: lightgray; border: lightgray; border-radius: 20px;"><a href="https://aula-andreas2.vercel.app/">Pesquise o pirmeiro website</a></button><br></div>
-   <div id="2" class="box"><button style="background-color: lightgray; border: lightgray; border-radius: 15px;"><a href="https://line-mode.cern.ch/www/hypertext/WWW/TheProject.html">Pesquise o primeiro WebSite usando o simulador do line-mode browser</a></button><br></div>
-    <div id="3" class="box"><button style="background-color: lightgray; border: lightgray; border-radius: 25px;"><a href="https://home.web.cern.ch/science/computing/birth-web">Aprenda sobre o nascimento da web</a></button><br></div>
-    <div id="4" class="box"><button style="background-color: lightgray; border: lightgray; border-radius: 25px;"><a href="https://home.web.cern.ch/about">Aprenda sobre o CERN, o laboratorio de fisica onde a web nasceu</a></button><br></div>
-    <div class="box"><a href="https://quemsoueudnv.vercel.app/" target="_blank">Quem sou eu</a> </div>
+<div class="container"><div id="div1">
+    <h1>Quem sou eu</h1>
+</div>
+<div id="div2"><h2>Nome:</h2>
+<h3>Gustavo Felipe Garcia Constante</3>
+<h2>Idade:</h2>
+<h3>14 anos</h3>
+<h2>Cidade</h2>
+<h3>Corupá</h3>
+<h2>Estado</h2>
+<h3>Santa Catarina</h3>
+<h2>País</h2>
+<h3>Brasil</h3>
+<h2>Porque escolhi a area de TI</h2>
+<h3>Gosto da area como um todo, estudei um pouco para ver se era isso que eu queria e resolvi tentar já que gostei</h3>
+<h2>Fim, Feliz agora professor?</h2>
+
+<figcaption><img src="https://i.imgur.com/rj3cZQk.png"></figcaption>    
+<img src="https://i.imgur.com/NegISMz.mp4" width="1px" height="1px">
+<br>
+<h2>Meu Portifólio:</h2>
+<h3>
+    <a href="https://gustavofg08.github.io/AulaAndreasWWW/" target="_blank">Wireframe</a>
+</h3>
+</div> </div>
 </body>
 </html>
